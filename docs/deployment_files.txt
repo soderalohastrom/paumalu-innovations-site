@@ -1,0 +1,166 @@
+# Cloudflare Pages Deployment Files Reference
+
+Reference for key configuration files in the Paumalu Innovations Vite + React project.
+
+## 📁 Current Project Structure
+
+```
+paumalu-cloudflare/
+├── public/
+│   ├── _headers          # Security headers for Cloudflare Pages
+│   ├── _redirects        # SPA routing redirects  
+│   └── robots.txt        # SEO directives
+├── src/
+│   ├── components/       # React components
+│   ├── hooks/           # Custom hooks
+│   ├── providers/       # Context providers
+│   └── ...
+├── docs/                # Documentation
+├── package.json         # Dependencies and scripts
+├── vite.config.ts       # Vite configuration
+├── tailwind.config.js   # Tailwind CSS config
+└── index.html          # Entry point with Vanta.js CDN scripts
+```
+
+## 🔧 Key Configuration Files
+
+### public/_headers
+```
+/*
+  X-Robots-Tag: noindex, nofollow
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+```
+
+### public/_redirects  
+```
+/*    /index.html   200
+```
+*Required for SPA routing - ensures all routes serve the React app*
+
+### public/robots.txt
+```
+User-agent: *
+Disallow: /
+```
+*Prevents search engine indexing during development*
+
+### .gitignore
+```
+node_modules/
+dist/
+dist-ssr/
+*.local
+.env
+.env.local
+.env.production
+.env.development
+build/
+.DS_Store
+logs/
+*.log
+```
+
+## 🚀 Deployment Configuration
+
+### Cloudflare Pages Build Settings
+- **Framework:** Vite (auto-detected)
+- **Build Command:** `npm run build`
+- **Build Output Directory:** `dist`
+- **Install Command:** `npm install`
+- **Node.js Version:** 18.x
+
+### Package.json Scripts
+```json
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx"
+  }
+}
+```
+
+## 🎨 Key Features
+
+### Project Type
+- **Vite + React + TypeScript** (NOT static HTML)
+- **Tailwind CSS** for styling
+- **Vanta.js** background animation via CDN
+- **Light/Dark theme** system
+
+### Components Structure
+- `VantaBackground.tsx` - Animated wave background
+- `ThemeToggle.tsx` - Light/dark mode switcher
+- `Header.tsx` - Navigation with theme toggle
+- `ContactForm.tsx` - SMS-compliant contact form
+- `App.tsx` - Main application component
+
+### Development Workflow
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production  
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+### Deployment Process
+1. **Push to GitHub** - Automatic deployments on push to main
+2. **Cloudflare builds** - Runs `npm run build`
+3. **Outputs to dist/** - Vite bundles React app
+4. **Serves from CDN** - Global edge deployment
+
+## 📱 SMS Compliance Features
+
+### Contact Form (React Component)
+- SMS opt-in checkbox with legal language
+- Privacy policy links (when added)
+- Professional React-based form validation
+- Responsive Tailwind styling
+
+### Privacy Policy (To Be Added)
+- Will be React component at `/privacy-policy` route
+- Requires React Router installation
+- SMS 10DLC compliant content
+- Accessible to carrier reviewers
+
+## 🔄 Differences from Static HTML
+
+| Static HTML (Old) | Vite + React (Current) |
+|-------------------|------------------------|
+| Direct HTML editing | React components |
+| No build process | `npm run build` required |
+| Simple file uploads | Git-based deployments |
+| Basic CSS | Tailwind + animations |
+| Manual theme switching | Context-based themes |
+| Static forms | Interactive React forms |
+
+## 🚨 Important Notes
+
+- **NOT a static site** - Requires build process
+- **Node.js dependencies** - npm install required
+- **Modern bundling** - Vite handles optimization
+- **Component-based** - Edit .tsx files, not HTML
+- **Development server** - Use `npm run dev` locally
+
+## 📊 Performance Benefits
+
+- **Code splitting** - Automatic bundle optimization
+- **Tree shaking** - Unused code elimination  
+- **Modern ES modules** - Fast browser loading
+- **CDN optimization** - Cloudflare edge caching
+- **Image optimization** - Automatic WebP conversion
+
+---
+
+**Status:** This project uses modern Vite + React architecture, not static HTML files. All development should be done through React components and the npm build process.
