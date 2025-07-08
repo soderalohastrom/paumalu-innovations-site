@@ -108,6 +108,33 @@ export const PrivacyPolicy: React.FC = () => {
           
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 pb-2 border-b-2 border-primary-500">
+              SMS Messaging Terms and Conditions
+            </h2>
+            
+            <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 rounded-r-lg mb-6">
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3 mt-0">
+                Data Sharing
+              </h3>
+              <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-4 ml-4">
+                <li><strong>Customer data is not shared with 3rd parties for promotional or marketing purposes.</strong></li>
+                <li><strong>Mobile opt-in and consent are never shared with anyone for any purpose.</strong> Any information sharing that may be mentioned elsewhere in this policy excludes mobile opt-in data.</li>
+              </ul>
+              
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3 mt-6">
+                Messaging Terms and Conditions
+              </h3>
+              <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-4 ml-4">
+                <li>By providing your phone number and agreeing to receive texts, you consent to receive text messages from Paumalu Innovations, from 808-752-3766 regarding customer care.</li>
+                <li><strong>Consent is not a condition of purchase.</strong> Message frequency varies.</li>
+                <li><strong>Message & data rates may apply.</strong> You can reply STOP to unsubscribe at any time or HELP for assistance.</li>
+                <li>You can also contact us at 808-752-3766 or scott@paumalu-innovations.com.</li>
+                <li><strong>Mobile opt-in information is never shared with third parties.</strong></li>
+              </ul>
+            </div>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 pb-2 border-b-2 border-primary-500">
               Information Sharing and Disclosure
             </h2>
             
