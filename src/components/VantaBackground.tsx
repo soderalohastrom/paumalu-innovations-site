@@ -77,7 +77,7 @@ export const VantaBackground: React.FC<VantaBackgroundProps> = ({
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
-        color: isDark ? 0x303030 : 0xd4d4d4,
+        color: isDark ? 0x1e3a8a : 0xd4d4d4,
         shininess: isDark ? 0.25 : 0.15,
         waveHeight: isDark ? 40 : 30,
         waveSpeed: 0.35,
@@ -114,7 +114,7 @@ export const VantaBackground: React.FC<VantaBackgroundProps> = ({
   useEffect(() => {
     if (!vantaRef.current) return
 
-    const newColor = isDark ? 0x303030 : 0xd4d4d4
+    const newColor = isDark ? 0x1e3a8a : 0xd4d4d4
     console.log('🎨 Updating Vanta color to:', `#${newColor.toString(16)}`)
     
     try {
