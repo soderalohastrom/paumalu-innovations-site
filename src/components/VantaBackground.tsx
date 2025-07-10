@@ -26,7 +26,7 @@ export const VantaBackground: React.FC<VantaBackgroundProps> = ({
     const checkScripts = () => {
       if (typeof window !== 'undefined' && window.VANTA && window.THREE) {
         setScriptsLoaded(true)
-        console.log('✅ Vanta scripts loaded successfully')
+        if (import.meta.env.DEV) console.log('✅ Vanta scripts loaded successfully')
       }
     }
 
@@ -95,11 +95,11 @@ export const VantaBackground: React.FC<VantaBackgroundProps> = ({
         }
       }
 
-      console.log('🌊 Initializing Vanta with color:', `#${options.color.toString(16)}`)
+      if (import.meta.env.DEV) console.log('🌊 Initializing Vanta with color:', `#${options.color.toString(16)}`)
       vantaRef.current = window.VANTA.WAVES(options)
 
     } catch (error) {
-      console.error('❌ Failed to initialize Vanta effect:', error)
+      if (import.meta.env.DEV) console.error('❌ Failed to initialize Vanta effect:', error)
     }
 
     return () => {
@@ -115,7 +115,7 @@ export const VantaBackground: React.FC<VantaBackgroundProps> = ({
     if (!vantaRef.current) return
 
     const newColor = isDark ? 0x303030 : 0xd4d4d4
-    console.log('🎨 Updating Vanta color to:', `#${newColor.toString(16)}`)
+    if (import.meta.env.DEV) console.log('🎨 Updating Vanta color to:', `#${newColor.toString(16)}`)
     
     try {
       vantaRef.current.setOptions({
@@ -124,7 +124,7 @@ export const VantaBackground: React.FC<VantaBackgroundProps> = ({
         waveHeight: isDark ? 40 : 30,
       })
     } catch (error) {
-      console.error('❌ Failed to update Vanta options:', error)
+      if (import.meta.env.DEV) console.error('❌ Failed to update Vanta options:', error)
     }
   }, [isDark])
 
