@@ -32,7 +32,7 @@ export const ContactForm: React.FC = () => {
     alert(message)
     
     // In production, send to your Convex backend
-    console.log('Form submitted:', formData)
+    if (import.meta.env.DEV) console.log('Form submitted:', formData)
   }
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value, type } = e.target
