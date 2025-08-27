@@ -249,8 +249,8 @@ export const PrivacyPolicy: React.FC = () => {
             <div className="text-gray-700 dark:text-gray-300 leading-relaxed">
               <p className="font-semibold">Paumalu Innovations</p>
               <p>Email: <a href="mailto:privacy@paumalu-innovations.com" className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors">privacy@paumalu-innovations.com</a></p>
-              <p>Phone: [Your Phone Number]</p>
-              <p>Address: [Your Business Address]</p>
+              <p>Phone: (808) 752-3766</p>
+
               <p className="mt-4">For text message help, reply "HELP" to any message you receive from us.</p>
             </div>
           </div>

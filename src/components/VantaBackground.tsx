@@ -77,11 +77,12 @@ export const VantaBackground: React.FC<VantaBackgroundProps> = ({
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
-        color: isDark ? 0x303030 : 0xd4d4d4,
-        shininess: isDark ? 0.25 : 0.15,
-        waveHeight: isDark ? 40 : 30,
+        color: isDark ? 0x0a0f1a : 0xd4d4d4,
+        shininess: isDark ? 0.85 : 0.15,
+        waveHeight: isDark ? 35 : 30,
         waveSpeed: 0.35,
-        zoom: 0.75,
+        zoom: 0.79,
+        forceAnimate: true,
         camera: {
           far: 1000,
           fov: 60,
@@ -114,14 +115,15 @@ export const VantaBackground: React.FC<VantaBackgroundProps> = ({
   useEffect(() => {
     if (!vantaRef.current) return
 
-    const newColor = isDark ? 0x303030 : 0xd4d4d4
+    const newColor = isDark ? 0x0a0f1a : 0xd4d4d4
     console.log('🎨 Updating Vanta color to:', `#${newColor.toString(16)}`)
     
     try {
       vantaRef.current.setOptions({
         color: newColor,
-        shininess: isDark ? 0.25 : 0.15,
-        waveHeight: isDark ? 40 : 30,
+        shininess: isDark ? 1.0 : 0.15,
+        waveHeight: isDark ? 35 : 30,
+        forceAnimate: true,
       })
     } catch (error) {
       console.error('❌ Failed to update Vanta options:', error)
