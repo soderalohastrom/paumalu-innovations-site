@@ -87,12 +87,7 @@ export const PrivacyPolicy: React.FC = () => {
               <li><strong>Legal Compliance:</strong> To comply with applicable laws and regulations</li>
             </ul>
             
-            <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3 mt-6">
-              SMS/Text Messaging
-            </h3>
-<h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3 mt-6">
-  Paumalu Innovations Privacy and Policy for Messaging
-</h3>
+
 <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 rounded-r-lg mb-6">
   <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 pb-2 border-b-2 border-primary-500">
     Paumalu Innovations – SMS Messaging Privacy Policy & Terms
