@@ -114,21 +114,6 @@ export const ContactForm: React.FC = () => {
           </div>
 
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium text-gray-900 dark:text-white mb-2">
-              Phone
-            </label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              placeholder="For urgent project communications"
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
-            />
-          </div>
-
-          <div>
             <label htmlFor="challenge" className="block text-sm font-medium text-gray-900 dark:text-white mb-2">
               What challenge are you facing?
             </label>
