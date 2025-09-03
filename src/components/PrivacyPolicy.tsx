@@ -90,47 +90,67 @@ export const PrivacyPolicy: React.FC = () => {
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3 mt-6">
               SMS/Text Messaging
             </h3>
-            <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 p-6 rounded-r-lg mb-6">
-              <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
-                If you provide consent to receive text messages from us, we will use your phone number to send:
-              </p>
-              <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-4 ml-4">
-                <li>Responses to your text messages and inquiries</li>
-                <li>Project-related communications when specifically requested</li>
-                <li>Urgent project updates when necessary</li>
-                <li>Appointment confirmations when requested via text</li>
-              </ul>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                <strong>Message frequency is minimal</strong> - we primarily use SMS for responses to customer-initiated conversations and essential project communications. <strong>Message and data rates may apply.</strong>
-              </p>
-            </div>
-          </section>
-          
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 pb-2 border-b-2 border-primary-500">
-              SMS Messaging Terms and Conditions
-            </h2>
-            
-            <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 rounded-r-lg mb-6">
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3 mt-0">
-                Data Sharing
-              </h3>
-              <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-4 ml-4">
-                <li><strong>Customer data is not shared with 3rd parties for promotional or marketing purposes.</strong></li>
-                <li><strong>Mobile opt-in and consent are never shared with anyone for any purpose.</strong> Any information sharing that may be mentioned elsewhere in this policy excludes mobile opt-in data.</li>
-              </ul>
-              
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3 mt-6">
-                Messaging Terms and Conditions
-              </h3>
-              <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-4 ml-4">
-                <li>By providing your phone number and agreeing to receive texts, you consent to receive text messages from Paumalu Innovations, from 808-752-3766 regarding customer care.</li>
-                <li><strong>Consent is not a condition of purchase.</strong> Message frequency varies.</li>
-                <li><strong>Message & data rates may apply.</strong> You can reply STOP to unsubscribe at any time or HELP for assistance.</li>
-                <li>You can also contact us at 808-752-3766 or scott@paumalu-innovations.com.</li>
-                <li><strong>Mobile opt-in information is never shared with third parties.</strong></li>
-              </ul>
-            </div>
+<h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3 mt-6">
+  Paumalu Innovations Privacy and Policy for Messaging
+</h3>
+<div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 rounded-r-lg mb-6">
+  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 pb-2 border-b-2 border-primary-500">
+    Paumalu Innovations – SMS Messaging Privacy Policy & Terms
+  </h2>
+
+  <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+    At Paumalu Innovations, we respect your privacy and are committed to safeguarding your information. By opting into our SMS messaging service, you consent to the following terms:
+  </p>
+
+  <ol className="list-decimal list-inside text-gray-700 dark:text-gray-300 space-y-3 ml-4">
+    <li>
+      <strong>Data Collection:</strong> We will collect your name, email address, and mobile phone number when you sign up for SMS updates. This information will be gathered verbally over the phone whenever someone contacts our official line or in our physical location.
+    </li>
+
+    <li>
+      <strong>Data Usage:</strong> Your data is used solely for the following purposes:
+      <ul className="list-disc list-inside ml-6 mt-2 space-y-1">
+        <li>Responding to your text messages and inquiries</li>
+        <li>Scheduling, confirming, and reminding you about appointments</li>
+        <li>Providing project-related communications, including urgent project updates as necessary</li>
+        <li>Offering customer assistance and support</li>
+        <li>Appointment confirmations and essential communications as requested</li>
+      </ul>
+    </li>
+
+    <li>
+      <strong>Message Frequency & Charges:</strong> Message frequency is minimal. We mainly use SMS for customer-initiated conversations and essential project communications. Message and data rates may apply, depending on your carrier and plan. Message frequency may vary based on communication needs.
+    </li>
+
+    <li>
+      <strong>Data Security:</strong> We protect your personal information with appropriate technical and organizational measures to prevent unauthorized access, disclosure, or use.
+    </li>
+
+    <li>
+      <strong>Data Retention:</strong> We retain your information as long as you are subscribed to our SMS service. You may request deletion of your information at any time by contacting us directly.
+    </li>
+
+    <li>
+      <strong>Opt-Out & Help:</strong> You may opt out of SMS communications at any time by replying STOP or CANCEL to any message, or by contacting us at <a href="tel:8087523766" className="text-primary-600 dark:text-primary-400">808-752-3766</a> or <a href="mailto:scott@paumalu-innovations.com" className="text-primary-600 dark:text-primary-400">scott@paumalu-innovations.com</a>. After unsubscribing, you’ll receive a final SMS confirming your opt-out, and your number will be removed from our SMS list within 24 hours. For additional assistance, reply HELP at any time and you will receive a message with our contact information.
+    </li>
+
+    <li>
+      <strong>Contact Information:</strong> For HELP, STOP, or CANCEL requests, or for questions about this policy, please contact us at: Paumalu Innovations, <a href="tel:8087523766" className="text-primary-600 dark:text-primary-400">808-752-3766</a>, <a href="mailto:scott@paumalu-innovations.com" className="text-primary-600 dark:text-primary-400">scott@paumalu-innovations.com</a>.
+    </li>
+
+    <li>
+      <strong>Data Sharing:</strong>
+      <ul className="list-disc list-inside ml-6 mt-2 space-y-1">
+        <li>Customer data, including mobile phone numbers and opt-in information, is never sold, rented, or shared with third parties for promotional or marketing purposes.</li>
+        <li>Any data-sharing restrictions outlined elsewhere in our general privacy policy do not apply to mobile opt-in data, which is never shared for any reason.</li>
+      </ul>
+    </li>
+
+    <li>
+      <strong>Consent not a Condition of Purchase:</strong> Providing your phone number and consenting to receive texts is not a condition of purchasing any goods or services from Paumalu Innovations.
+    </li>
+  </ol>
+</div>
           </section>
 
           <section className="mb-8">
